@@ -25,8 +25,8 @@ KC_A, MT(MOD_LSFT, KC_S), LCTL_T(KC_D), LT(2,KC_F), KC_G,               TD(TD_H_
 LGUI_T(KC_Z), KC_X, KC_C, KC_V, KC_B,                KC_N, KC_M, KC_COMM, KC_DOT, LGUI_T(KC_QUOT),
              LT(4,KC_NONUS_HASH), ALT_T(KC_TAB), LT(1,KC_ENT),       LT(5,KC_SPC), ALT_T(KC_BSPC), LT(3,KC_SLASH)),
 	[1] = LAYOUT(
-KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,                KC_PSLS, KC_7, KC_8, KC_9, KC_PEQL,
-KC_NO, KC_NO, KC_NO, KC_NO, LALT(KC_TAB),                KC_PAST, KC_4, KC_5, KC_6, KC_PPLS,
+KC_NO, KC_NO, KC_NO, KC_NO, RCTL(KC_T),                KC_PSLS, KC_7, KC_8, KC_9, KC_PEQL,
+KC_NO, RCTL(KC_S), KC_NO, KC_NO, KC_NO,                KC_PAST, KC_4, KC_5, KC_6, KC_PPLS,
 RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,                KC_DOT, KC_1, KC_2, KC_3, KC_PMNS,
              KC_TRNS, KC_NO, KC_NO,               KC_SPACE, KC_0, KC_COMM),
 
@@ -34,9 +34,9 @@ RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,                KC_DOT, KC
             KC_NO, KC_NO, KC_AMPR, KC_LT, KC_GT,                LSFT(KC_NONUS_HASH), KC_LBRC, KC_RBRACKET, KC_NO, KC_NO,
             KC_TILD, KC_HASH, KC_LBRC, KC_EXLM, KC_UNDS,                KC_CIRC, KC_LPRN, KC_RPRN, KC_DLR, KC_COLN,
             KC_NO, KC_NO, KC_NO, KC_SLSH, KC_NONUS_BSLASH,                KC_DQUO, KC_LCBR, KC_RCBR, KC_NO, LSFT(KC_2),
-                             KC_NO, KC_BSLS, LSFT(KC_SLSH),               KC_MINS, KC_NO, KC_NO),
+                             KC_NO, KC_BSLS, LSFT(KC_SLSH),               KC_MINS, KC_DELETE, KC_NO),
 	[3] = LAYOUT(KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,       KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
-            KC_F11, KC_F12, KC_TRNS, KC_TRNS, KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, LCTL(LSFT(KC_ESC)), LCTL(LALT(KC_DEL)),
+            KC_F11, KC_F12, KC_TRNS, LALT(KC_F4), KC_TRNS,     KC_TRNS, KC_TRNS, KC_TRNS, LCTL(LSFT(KC_ESC)), LCTL(LALT(KC_DEL)),
             RESET, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCREEN, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 
 	[4] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,       KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_NO,
