@@ -25,10 +25,10 @@ KC_A, MT(MOD_LSFT, KC_S), LCTL_T(KC_D), LT(2,KC_F), KC_G,               TD(TD_H_
 LGUI_T(KC_Z), KC_X, KC_C, KC_V, KC_B,                KC_N, KC_M, KC_COMM, KC_DOT, LGUI_T(KC_QUOT),
              LT(4,KC_NONUS_HASH), ALT_T(KC_TAB), LT(1,KC_ENT),       LT(5,KC_SPC), ALT_T(KC_BSPC), LT(3,KC_SLASH)),
 	[1] = LAYOUT(
-KC_NO, RCTL(KC_W), KC_NO, KC_NO, RCTL(KC_T),                KC_PSLS, KC_7, KC_8, KC_9, KC_PEQL,
-KC_NO, RCTL(KC_S), KC_NO, KC_NO, KC_NO,                KC_PAST, KC_4, KC_5, KC_6, KC_PPLS,
+KC_NO, RCTL(KC_W), KC_NO, KC_NO, RCTL(KC_T),                KC_PSLS, KC_7, KC_8, KC_9, KC_PAST,
+KC_NO, RCTL(KC_S), KC_NO, KC_NO, KC_NO,                KC_PEQL, KC_4, KC_5, KC_6, KC_PPLS,
 RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,                KC_DOT, KC_1, KC_2, KC_3, KC_PMNS,
-             KC_TRNS, KC_NO, KC_NO,               KC_SPACE, KC_0, KC_COMM),
+             KC_TRNS, KC_NO, KC_NO,               KC_0, KC_BSPC, KC_COMM),
 
 	[2] = LAYOUT(
             KC_NO, KC_NO, KC_AMPR, KC_LT, KC_GT,                LSFT(KC_NONUS_HASH), KC_LBRC, KC_RBRACKET, KC_NO, KC_NO,
