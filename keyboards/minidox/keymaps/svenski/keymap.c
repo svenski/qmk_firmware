@@ -20,14 +20,14 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT(
-TD(TD_Q_ESC), KC_W, KC_E, KC_R, KC_T,                KC_Y, KC_U, TD(TD_I_STAR), KC_O, KC_P,
-MT(MOD_LALT, KC_A), MT(MOD_LSFT, KC_S), LCTL_T(KC_D), LT(2,KC_F), KC_G,               TD(TD_H_EQ) , LT(2,KC_J), RCTL_T(KC_K), RSFT_T(KC_L),MT(MOD_LALT, LSFT(KC_COLN)),
+TD(TD_Q_ESC), KC_W, KC_E, KC_R, KC_T,                KC_Y, MT(MOD_LALT, KC_U), TD(TD_I_STAR), KC_O, KC_P,
+MT(MOD_LALT, KC_A), MT(MOD_LSFT, KC_S), LCTL_T(KC_D), LT(2,KC_F), KC_G,               TD(TD_H_EQ) , LT(2,KC_J), RCTL_T(KC_K), RSFT_T(KC_L),KC_COLN,
 LGUI_T(KC_Z), KC_X, KC_C, KC_V, KC_B,                KC_N, KC_M, KC_COMM, KC_DOT, LGUI_T(KC_QUOT),
              ALT_T(KC_ESCAPE), LT(4,KC_TAB), LT(1,KC_ENT),       LT(5,KC_SPC), LT(3,KC_BSPC), ALT_T(KC_SLASH)),
 	[1] = LAYOUT(
-KC_NO, RCTL(KC_W), KC_NO, KC_NO, RCTL(KC_T),                KC_PSLS, KC_7, KC_8, KC_9, KC_PAST,
-KC_NO, RCTL(KC_S), KC_NO, KC_NO, KC_NO,                KC_PEQL, KC_4, KC_5, KC_6, KC_PPLS,
-RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,                KC_DOT, KC_1, KC_2, KC_3, KC_PMNS,
+KC_NO, RCTL(KC_W), LCTL(LSFT(KC_LEFT)), LCTL(LSFT(KC_LEFT)), RCTL(KC_T),                KC_7, KC_8, KC_9, KC_PAST, KC_PEQL,
+RCTL(KC_A), RCTL(KC_S), LCTL(KC_LEFT), LCTL(KC_RGHT), KC_NO,                KC_4, KC_5, KC_6, KC_PPLS, KC_PMNS,
+RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,                KC_1, KC_2, KC_3, KC_DOT, KC_PSLS,
              KC_TRNS, KC_NO, KC_NO,               KC_0, KC_BSPC, KC_COMM),
 
 	[2] = LAYOUT(
@@ -36,8 +36,8 @@ RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,                KC_DOT, KC
             KC_NO, KC_NO, KC_NO, KC_SLSH, KC_NONUS_BSLASH,                KC_DQUO, KC_LCBR, KC_RCBR, KC_NO, LSFT(KC_2),
                              KC_NO, KC_BSLS, LSFT(KC_SLSH),               KC_MINS, KC_DELETE, KC_NO),
 	[3] = LAYOUT(KC_F1, KC_F2, KC_F3, KC_F4, KC_F5,       KC_F6, KC_F7, KC_F8, KC_F9, KC_F10,
-            KC_F11, KC_F12, KC_TRNS, LALT(KC_F4), KC_TRNS,     KC_CAPSLOCK, KC_TRNS, KC_TRNS, LCTL(LSFT(KC_ESC)), LCTL(LALT(KC_DEL)),
-            RESET, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCREEN, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
+            KC_F11, KC_F12, KC_TRNS, KC_TRNS, KC_TRNS,     KC_CAPSLOCK, KC_TRNS, KC_TRNS, LCTL(LSFT(KC_ESC)), LCTL(LALT(KC_DEL)),
+            RESET, LALT(KC_F4), KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_PSCREEN, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS),
 
 	[4] = LAYOUT(KC_NO, KC_NO, KC_NO, KC_NO, KC_NO,       KC_HOME, KC_PGDN, KC_PGUP, KC_END, KC_NO,
             KC_NO, KC_NO, KC_NO, KC_SLASH, KC_NONUS_HASH,     KC_LEFT, KC_DOWN, KC_UP, KC_RGHT, KC_BTN1,
@@ -59,3 +59,4 @@ void matrix_init_user(void) {
 };
 
 
+// MT(MOD_LALT, LSFT(KC_SCLN))
