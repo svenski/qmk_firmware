@@ -54,7 +54,7 @@ RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,               KC_PSLS, KC
              KC_TRNS, KC_NO, KC_NO,               KC_0, KC_BSPC, KC_COMM),
 
 	[2] = LAYOUT(
-            KC_NO, KC_NO, KC_AMPR, KC_LT, KC_GT,                LSFT(KC_NONUS_HASH), KC_LBRC, KC_RBRACKET, KC_NO, KC_LBRC,
+            KC_NO, KC_AMPR, KC_LT, KC_GT,KC_PERC,                LSFT(KC_NONUS_HASH), KC_LBRC, KC_RBRACKET, KC_NO, KC_LBRC,
             KC_NONUS_HASH, KC_HASH, KC_LBRC, KC_UNDS, KC_EXLM,                KC_CIRC, KC_LPRN, KC_RPRN, KC_DLR, KC_SCOLON,
             KC_NO, KC_NO, KC_NO, KC_SLSH, KC_NONUS_BSLASH,                KC_DQUO, KC_LCBR, KC_RCBR, KC_NO, LSFT(KC_2),
                              KC_NO, KC_BSLS, LSFT(KC_SLSH),               KC_MINS, KC_DELETE, KC_NO),
