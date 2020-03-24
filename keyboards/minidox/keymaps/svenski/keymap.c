@@ -3,25 +3,48 @@
 
 #define KC_TRANS KC_TRANSPARENT
 
+
+void dance_cln_finished (qk_tap_dance_state_t *state, void *user_data) {
+  if (state->count == 1) {
+    register_code (KC_RSFT);
+    register_code (KC_SCLN);
+  } else {
+    register_code (KC_SCLN);
+  }
+}
+
+void dance_cln_reset (qk_tap_dance_state_t *state, void *user_data) {
+  if (state->count == 1) {
+    unregister_code (KC_RSFT);
+    unregister_code (KC_SCLN);
+  } else {
+    unregister_code (KC_SCLN);
+  }
+}
+
 //Tap Dance Declarations
 enum {
   TD_Q_ESC = 0,
   TD_H_EQ = 1,
-  TD_I_CAP = 2
+  TD_I_CAP = 2,
+  TD_CLN = 3
 };
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   //Tap once for Esc, twice for Caps Lock
   [TD_Q_ESC]  = ACTION_TAP_DANCE_DOUBLE(KC_Q, KC_ESC),
   [TD_H_EQ]  = ACTION_TAP_DANCE_DOUBLE(KC_H, KC_EQUAL),
-  [TD_I_CAP]  = ACTION_TAP_DANCE_DOUBLE(KC_I, LSFT(KC_I))
+  [TD_I_CAP]  = ACTION_TAP_DANCE_DOUBLE(KC_I, LSFT(KC_I)),
+  [TD_CLN] = ACTION_TAP_DANCE_FN_ADVANCED (NULL, dance_cln_finished, dance_cln_reset)
 // Other declarations would go here, separated by commas, if you have them
 };
+
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT(
 TD(TD_Q_ESC), KC_W, KC_E, KC_R, KC_T,                KC_Y, MT(MOD_LALT, KC_U), TD(TD_I_CAP), KC_O, KC_P,
-MT(MOD_LALT, KC_A), MT(MOD_LSFT, KC_S), LCTL_T(KC_D), LT(2,KC_F), KC_G,               TD(TD_H_EQ) , LT(2,KC_J), RCTL_T(KC_K), RSFT_T(KC_L),KC_COLN,
+MT(MOD_LALT, KC_A), MT(MOD_LSFT, KC_S), LCTL_T(KC_D), LT(2,KC_F), KC_G,               TD(TD_H_EQ) , LT(2,KC_J), RCTL_T(KC_K), RSFT_T(KC_L),TD(TD_CLN),
 LGUI_T(KC_Z), KC_X, KC_C, KC_V, KC_B,                KC_N, KC_M, KC_COMM, KC_DOT, LGUI_T(KC_QUOT),
              ALT_T(KC_ESCAPE), LT(4,KC_TAB), LT(1,KC_ENT),       LT(5,KC_SPC), LT(3,KC_BSPC), ALT_T(KC_SLASH)),
 	[1] = LAYOUT(
