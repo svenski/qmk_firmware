@@ -20,14 +20,14 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT(
-TD(TD_Q_ESC), KC_W, KC_E, KC_R, KC_T,                KC_Y, y, TD(TD_I_CAP), KC_O, KC_P,
+TD(TD_Q_ESC), KC_W, KC_E, KC_R, KC_T,                KC_Y, MT(MOD_LALT, KC_U), TD(TD_I_CAP), KC_O, KC_P,
 MT(MOD_LALT, KC_A), MT(MOD_LSFT, KC_S), LCTL_T(KC_D), LT(2,KC_F), KC_G,               TD(TD_H_EQ) , LT(2,KC_J), RCTL_T(KC_K), RSFT_T(KC_L),KC_COLN,
 LGUI_T(KC_Z), KC_X, KC_C, KC_V, KC_B,                KC_N, KC_M, KC_COMM, KC_DOT, LGUI_T(KC_QUOT),
              ALT_T(KC_ESCAPE), LT(4,KC_TAB), LT(1,KC_ENT),       LT(5,KC_SPC), LT(3,KC_BSPC), ALT_T(KC_SLASH)),
 	[1] = LAYOUT(
-KC_NO, RCTL(KC_W), LCTL(LSFT(KC_LEFT)), LCTL(LSFT(KC_RGHT)), RCTL(KC_T),                KC_7, KC_8, KC_9, KC_PAST, KC_PEQL,
-RCTL(KC_A), RCTL(KC_S), LCTL(KC_LEFT), LCTL(KC_RGHT), KC_NO,                KC_4, KC_5, KC_6, KC_PPLS, KC_PMNS,
-RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,                KC_1, KC_2, KC_3, KC_DOT, KC_PSLS,
+KC_NO, RCTL(KC_W), LCTL(LSFT(KC_LEFT)), LCTL(LSFT(KC_RGHT)), RCTL(KC_T),               KC_PAST, KC_7, KC_8, KC_9,  KC_PEQL,
+RCTL(KC_A), RCTL(KC_S), LCTL(KC_LEFT), LCTL(KC_RGHT), KC_NO,               KC_PPLS, KC_4, KC_5, KC_6,  KC_PMNS,
+RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO,               KC_PSLS, KC_1, KC_2, KC_3, KC_DOT, 
              KC_TRNS, KC_NO, KC_NO,               KC_0, KC_BSPC, KC_COMM),
 
 	[2] = LAYOUT(
