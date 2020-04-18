@@ -10,9 +10,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    MT(MOD_LALT, KC_U),    KC_I,    KC_O,    KC_P,    KC_BSLS,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LCTRL, MT(MOD_LALT, KC_A),    MT(MOD_LSFT, KC_S),    LCTL_T(KC_D),    LT(2,KC_F),    KC_G,                               KC_H,    LT(2,KC_J),    RCTL_T(KC_K),    RSFT_T(KC_L),    KC_SCLN, KC_QUOT,
+     KC_LCTRL, MT(MOD_LALT, KC_A),    MT(MOD_LSFT, KC_S),    LCTL_T(KC_D),    LT(2,KC_F),    KC_G,                               KC_H,    LT(2,KC_J),    RCTL_T(KC_K),    RSFT_T(KC_L),    KC_SCLN, KC_SLSH,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_GRV,           KC_DEL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RGUI,
+     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_GRV,           KC_DEL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_QUOT, KC_RGUI,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ALT_T(KC_ESCAPE), LT(4,KC_TAB),   LT(1,KC_ENT),                    LT(5,KC_SPC),  LT(3,KC_BSPC),   ALT_T(KC_SLASH)
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
@@ -99,6 +99,7 @@ void encoder_update_user(uint8_t index, bool clockwise) {
             tap_code(KC_VOLD);
         }
     }
+
     else if (index == 1) {
         if (clockwise) {
             tap_code(KC_PGDN);
