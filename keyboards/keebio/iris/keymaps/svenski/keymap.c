@@ -8,11 +8,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //┌────────┬────────┬────────┬────────┬────────┬────────┐                          ┌────────┬────────┬────────┬────────┬────────┬────────┐
      KC_ESC,  LSFT(KC_1),    LSFT(KC_2),    LSFT(KC_3),    LSFT(KC_4),    LSFT(KC_5),                               LSFT(KC_6),    LSFT(KC_7),    LSFT(KC_8),    LSFT(KC_9),    LSFT(KC_0),    KC_EQUAL,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                               KC_Y,    MT(MOD_LALT, KC_U),    KC_I,    KC_O,    KC_P,    KC_BSLS,
+     KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_G,                               KC_J,    MT(MOD_LALT, KC_L),    KC_U,    KC_Y,    KC_SCOLON,    KC_BSLS,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LCTRL, MT(MOD_LALT, KC_A),    MT(MOD_LSFT, KC_S),    LCTL_T(KC_D),    LT(2,KC_F),    KC_G,                               KC_H,    LT(2,KC_J),    RCTL_T(KC_K),    RSFT_T(KC_L),    KC_SCLN, KC_SLSH,
+     KC_LCTRL, MT(MOD_LALT, KC_A),    MT(MOD_LSFT, KC_R),    LCTL_T(KC_S),    LT(2,KC_T),    KC_D,                               KC_H,    LT(2,KC_N),    RCTL_T(KC_E),    RSFT_T(KC_I),    KC_O, KC_SLSH,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_GRV,           KC_DEL,  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_QUOT, KC_RGUI,
+     KC_LSFT, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,    KC_GRV,           KC_DEL,  KC_K,    KC_M,    KC_COMM, KC_DOT,  KC_QUOT, KC_RGUI,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     ALT_T(KC_ESCAPE), LT(4,KC_TAB),   LT(1,KC_ENT),                    LT(5,KC_SPC),  LT(3,KC_BSPC),   ALT_T(KC_SLASH)
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
