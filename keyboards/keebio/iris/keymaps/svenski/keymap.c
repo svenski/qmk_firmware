@@ -24,9 +24,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
      KC_NO,   KC_NO,    RCTL(KC_W),    LCTL(LSFT(KC_LEFT)),    LCTL(LSFT(KC_RGHT)),    RCTL(KC_T),                               LSFT(KC_8),    KC_7,    KC_8,    KC_9,    KC_PEQL,    KC_PGDN,
   //├────────┼────────┼────────┼────────┼────────┼────────┤                          ├────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_NO,  RCTL(KC_A), RCTL(KC_S), LCTL(KC_LEFT), LCTL(KC_RGHT),   KC_NO,                            LSFT(KC_EQUAL), KC_P4,   KC_P5,   KC_P6,   KC_MINUS, KC_HOME,
+     KC_NO,  RCTL(KC_A), RCTL(KC_S), LCTL(KC_LEFT), LCTL(KC_RGHT),   KC_NO,                            LSFT(KC_EQUAL), KC_4,   KC_5,   KC_6,   KC_MINUS, KC_HOME,
   //├────────┼────────┼────────┼────────┼────────┼────────┼────────┐        ┌────────┼────────┼────────┼────────┼────────┼────────┼────────┤
-     KC_NO, RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO, KC_LPRN,          KC_DEL, KC_SLASH, KC_P1,   KC_P2,   KC_P3,   KC_DOT, KC_END,
+     KC_NO, RCTL(KC_Z), RCTL(KC_X), RCTL(KC_C), RCTL(KC_V), KC_NO, KC_LPRN,          KC_DEL, KC_SLASH, KC_1,   KC_2,   KC_3,   KC_DOT, KC_END,
   //└────────┴────────┴────────┴───┬────┴───┬────┴───┬────┴───┬────┘        └───┬────┴───┬────┴───┬────┴───┬────┴────────┴────────┴────────┘
                                     _______, _______, KC_NO,                    KC_0,  KC_BSPC, KC_COMM
                                 // └────────┴────────┴────────┘                 └────────┴────────┴────────┘
