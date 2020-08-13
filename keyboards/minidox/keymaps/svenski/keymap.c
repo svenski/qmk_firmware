@@ -24,7 +24,7 @@ void dance_cln_reset (qk_tap_dance_state_t *state, void *user_data) {
 
 //Tap Dance Declarations
 enum {
-  TD_Q_ESC = 0,
+  TD_H_ESQ = 0,
   TD_Y_EQ = 1,
   TD_U_CAP = 2,
   TD_CLN = 3
@@ -32,7 +32,7 @@ enum {
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   //Tap once for Esc, twice for Caps Lock
-  [TD_Q_ESC]  = ACTION_TAP_DANCE_DOUBLE(KC_Q, KC_ESC),
+  [TD_H_ESQ]  = ACTION_TAP_DANCE_DOUBLE(KC_Q, KC_ESC),
   [TD_Y_EQ]  = ACTION_TAP_DANCE_DOUBLE(KC_Y, KC_EQUAL),
   [TD_U_CAP]  = ACTION_TAP_DANCE_DOUBLE(KC_U, LSFT(KC_8)),
   [TD_CLN] = ACTION_TAP_DANCE_FN_ADVANCED (NULL, dance_cln_finished, dance_cln_reset)
@@ -43,8 +43,8 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT(
-TD(TD_Q_ESC), KC_W, KC_F, KC_P, KC_G,                KC_J, KC_L, TD(TD_U_CAP), KC_Y, KC_SCOLON,
-MT(MOD_LALT, KC_A), MT(MOD_LSFT, KC_R), LCTL_T(KC_S), LT(2,KC_T), KC_D,               KC_H , LT(2,KC_N), RCTL_T(KC_E), RSFT_T(KC_I),MT(MOD_LALT, KC_O),
+KC_Q, KC_W, KC_F, KC_P, KC_G,                KC_J, KC_L, TD(TD_U_CAP), KC_Y, KC_SCOLON,
+MT(MOD_LALT, KC_A), MT(MOD_LSFT, KC_R), LCTL_T(KC_S), LT(2,KC_T), KC_D,               TD(TD_H_ESQ) , LT(2,KC_N), RCTL_T(KC_E), RSFT_T(KC_I),MT(MOD_LALT, KC_O),
 LGUI_T(KC_Z), KC_X, KC_C, KC_V, KC_B,                KC_K, KC_M, KC_COMM, KC_DOT, LGUI_T(KC_QUOT),
              ALT_T(KC_ESCAPE), LT(4,KC_TAB), LT(1,KC_ENT),       LT(5,KC_SPC), LT(3,KC_BSPC), ALT_T(KC_SLASH)),
 	[1] = LAYOUT(
